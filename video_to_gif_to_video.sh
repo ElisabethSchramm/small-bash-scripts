@@ -1,7 +1,7 @@
 #!/bin/bash
-#video in gif konvertieren und zurück zu einem video 
-# konvertieren für den gifeffekt 
-# benötigte programme : mediainfo, realpath, ffmpeg, #imagemagick
+# Convert video to gif and back to video
+# Convert for gif effect
+# Required programs: mediainfo, realpath, ffmpeg, imagemagick
 
 # merge video and audio with same length; arg1: input video; arg2: input audio, arg3: target directory  
 convertVideoAndAudioToVideo () { 
@@ -524,3 +524,4 @@ while true; do
 
 chooseOptions
     
+
