@@ -5,9 +5,41 @@ The small scripts were designed to process videos according to the specified req
 They also served as a way to learn the basics of Bash scripting.  
 They are without any graphical user interface.
 
-## Simple Video(AVI) Stabilization Script
+## Video(AVI) Stabilization Script
 
-This is a simple script to stabilize videos. It uses ffmpeg to improve shaky footage.
+This is a script to stabilize videos. It uses ffmpeg to improve shaky footage.
+
+### Requirements
+
+You must have these programs installed:
+
+- ffmpeg: For video processing.
+- ImageMagick: For image manipulation (used during stabilization).
+- mediainfo: To check video details.
+- realpath: To handle file paths.
+
+### Installation
+
+On Ubuntu/Debian:
+
+```bash
+sudo apt install ffmpeg imagemagick mediainfo realpath
+```
+
+### How to Use
+
+Make sure your video file is in a folder without special characters or spaces in its name.
+
+Run the script:
+```bash
+bash stabilizeAvi.sh
+```
+
+### Notes
+
+If you see "unable to read exif data from opened file", don't worry — it's normal.
+
+## Convert the video to a gif and back to a video to achieve the gif effect.
 
 ### Requirements
 
@@ -24,6 +56,7 @@ On Ubuntu/Debian:
 
 ```bash
 sudo apt install ffmpeg imagemagick mediainfo realpath
+```
 
 ### How to Use
 
@@ -31,8 +64,5 @@ Make sure your video file is in a folder without special characters or spaces in
 
 Run the script:
 ```bash
-bash stabilizeAvi.sh
-
-### Notes
-
-If you see "unable to read exif data from opened file", don't worry — it's normal.
+bash video_to_gif_to_video.sh
+```
